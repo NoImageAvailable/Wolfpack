@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- ========== Wolf base ========== -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[@Name="ThingBaseWolf"]/race</xpath>
+		<value>
+			<herdAnimal>true</herdAnimal>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/PawnKindDef[@Name="AnimalKindBaseWolf"]</xpath>
+		<value>
+			<wildSpawn_GroupSizeRange>
+			  <min>2</min>
+			  <max>5</max>
+			</wildSpawn_GroupSizeRange>
+		</value>
+	</Operation>
+
+	<!-- ========== Biomes ========== -->
+
+	<!-- Temperate forest -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/BiomeDef[defName="TemperateForest"]/wildAnimals/WolfTimber</xpath>
+		<value>
+			<WolfTimber>0.12</WolfTimber>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/BiomeDef[defName="TemperateForest"]/wildAnimals/Warg</xpath>
+		<value>
+			<Warg>0.036</Warg>
+		</value>
+	</Operation>
+
+	<!-- Boreal forest -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/BiomeDef[defName="BorealForest"]/wildAnimals/WolfTimber</xpath>
+		<value>
+			<WolfTimber>0.21</WolfTimber>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/BiomeDef[defName="BorealForest"]/wildAnimals/WolfArctic</xpath>
+		<value>
+			<WolfArctic>0.09</WolfArctic>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/BiomeDef[defName="BorealForest"]/wildAnimals/Warg</xpath>
+		<value>
+			<Warg>0.021</Warg>
+		</value>
+	</Operation>
+
+	<!-- Tundra -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/BiomeDef[defName="Tundra"]/wildAnimals/WolfTimber</xpath>
+		<value>
+			<WolfTimber>0.024</WolfTimber>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/BiomeDef[defName="Tundra"]/wildAnimals/WolfArctic</xpath>
+		<value>
+			<WolfArctic>0.18</WolfArctic>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/BiomeDef[defName="Tundra"]/wildAnimals/Warg</xpath>
+		<value>
+			<Warg>0.024</Warg>
+		</value>
+	</Operation>
+
+	<!-- Ice sheet -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/BiomeDef[defName="IceSheet" or defName="SeaIce"]/wildAnimals/WolfArctic</xpath>
+		<value>
+			<WolfArctic>0.06</WolfArctic>
+		</value>
+	</Operation>
+
+	<!-- Arid shrubland -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/BiomeDef[defName="AridShrubland"]/wildAnimals/WolfTimber</xpath>
+		<value>
+			<WolfTimber>0.03</WolfTimber>
+		</value>
+	</Operation>
+
+</Patch>
+
