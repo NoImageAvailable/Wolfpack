@@ -4,7 +4,7 @@
 	<!-- ========== Wolf base ========== -->
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[@Name="ThingBaseWolf"]/race</xpath>
+		<xpath>*/ThingDef[@Name="ThingBaseWolf" or defName="Warg"]/race</xpath>
 		<value>
 			<herdAnimal>true</herdAnimal>
 		</value>
